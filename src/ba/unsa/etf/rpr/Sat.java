@@ -54,6 +54,10 @@ public class Sat {
         }
     }
 
+    public void ispisi() {
+        System.out.println(sati + ":" + minute + ":" + sekunde);
+    }
+
     public int getSati() {
         return sati;
     }
