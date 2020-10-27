@@ -58,7 +58,7 @@ public class Sat {
     }
 
     public void ispisi() {
-        System.out.println(sati + ":" + minute + ":" + sekunde);
+        System.out.println(toString());
     }
 
     public int getSati() {
@@ -71,5 +71,10 @@ public class Sat {
 
     public int getSekunde() {
         return sekunde;
+    }
+
+    @Override
+    public String toString() {
+        return getSati() + ":" + getMinute() + ":" + getSekunde();
     }
 }
