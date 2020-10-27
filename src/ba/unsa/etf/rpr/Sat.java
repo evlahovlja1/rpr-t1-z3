@@ -3,7 +3,7 @@ package ba.unsa.etf.rpr;
 public class Sat {
     private int sati, minute, sekunde;
 
-    public Sat(int sati, int minute, int sekunde) {
+    public Sat(int sati, int minute, int sekunde) throws IllegalArgumentException {
         postavi(sati, minute, sekunde);
     }
 
