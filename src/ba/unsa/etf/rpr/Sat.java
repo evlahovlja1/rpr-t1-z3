@@ -7,7 +7,10 @@ public class Sat {
         postavi(sati, minute, sekunde);
     }
 
-    public void postavi(int sati, int minute, int sekunde) {
+    public void postavi(int sati, int minute, int sekunde) throws IllegalArgumentException {
+        if (sati >= 24 || sati < 0) throw new IllegalArgumentException("Sati van opsega");
+        else if (minute >= 60 || minute < 0) throw new IllegalArgumentException("Minute van opsega");
+        else if (sekunde >= 60 || sekunde < 0) throw new IllegalArgumentException("Sekunde van opsega");
         this.sati = sati;
         this.minute = minute;
         this.sekunde = sekunde;
